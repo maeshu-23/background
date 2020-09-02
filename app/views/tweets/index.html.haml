@@ -1,0 +1,26 @@
+.TweetMain
+  .TweetMain__form
+    - @tweets.each do |tweet|
+      .TweetMain__menu
+        .TweetMain__body
+          = link_to user_path(tweet.user) do
+            = attachment_image_tag tweet.user, :profile_image, fallback: "no-image.png", class: "Tweetshow__image"
+          .TweetMain__body__name
+            = link_to user_path(tweet.user), class: "TweetMain__body__Name" do
+              = tweet.user.username
+          .TweetMain__body__date
+            = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+        .TweetMain__title
+          = link_to tweet_path(tweet), class: "TweetMain__Title" do
+            = tweet.title
+          .TweetMain__favorite
+            - unless user_signed_in?
+              = icon('far', 'heart', class: "Favorite")
+            - if user_signed_in?
+              - if current_user.already_favorited?(tweet)
+                = link_to tweet_favorites_path(tweet), method: :delete, class: "Favorite" do
+                  = icon('fas', 'heart')
+              - else
+                = link_to tweet_favorites_path(tweet), method: :post, class: "Favorite" do
+                  = icon('far', 'heart')
+              = tweet.favorites.count
