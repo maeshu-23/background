@@ -1,16 +1,16 @@
 .Tweetshow {
-  height: calc(100vh - 115px);
+  height: calc(100vh - 106px);
   background-color: whitesmoke;
-  padding-top: 48px;
+  padding-top: 40px;
   &__user{
     overflow: scroll;
-    height: 600px;
-    width: 700px;
+    height: 640px;
+    width: 780px;
     background-color: white;
     margin: 0 auto;
     padding: 10px;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    box-shadow: 0 0 20px rgba(41,41,41,0.2);
     &__main{
       display: flex;
       padding-top: 10px;
@@ -31,7 +31,7 @@
       margin-top: 40px;
     }
     &__form{
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 900;
       padding-left: 10px;
       display: flex;
