@@ -3,7 +3,6 @@
   height: calc(100vh - 65px);
   overflow: scroll;
 }
-
 .Userlists{
   height: 100%;
   width: 550px;
@@ -13,11 +12,9 @@
   overflow: hidden;
   overflow: scroll;
 }
-
 .UserList {
   border-bottom: 2px solid #ddd;
 }
-
 .Userlist {
   padding: 18px 10px 0 13px;
   display: flex;
@@ -36,15 +33,12 @@
     padding-top: 13px;
   }
 }
-
 .Userimage {
   border-radius: 50%;
   height: 125px;
   width: 125px;
-  // padding: 8px;
   border: 2px solid #ddd;
 }
-
 .Usercount {
   font-size: 13px;
   text-align: right;
