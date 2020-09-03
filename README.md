@@ -35,7 +35,7 @@
 
 
 ## 使用技術
-  Ruby/Ruby on Rails/MYSQL/Github/Heroku/Visual Studio Code
+  Ruby/Ruby on Rails/MYSQL/Github/Heroku/AWS/Visual Studio Code
 
 
 ## 今後実装したい機能

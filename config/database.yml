@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: background_production
-  username: background
-  password: <%= ENV['BACKGROUND_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DATABASE_USERNAME'] %>
+  username: <%= ENV['DATABASE_PASSWORD'] %>
+  password: <%= ENV['RAILS_MASTER_KEY'] %>

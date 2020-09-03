@@ -8,6 +8,8 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'font-awesome-sass'
 gem "refile", github: 'refile/refile', require: "refile/rails"
 gem "refile-mini_magick", github: 'refile/refile-mini_magick'
+gem 'rails_12factor', group: :production
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use mysql as the database for Active Record
