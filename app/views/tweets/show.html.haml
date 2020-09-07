@@ -2,7 +2,7 @@
   .Tweetshow__user
     .Tweetshow__user__main
       = link_to user_path(@tweet.user) do
-        = attachment_image_tag @tweet.user, :profile_image, fallback: "no-image.png", class: "Tweetshow__image"
+        = attachment_image_tag @tweet.user, :profile_image, fallback: "no-image.png", size: "70x70", class: "Tweetshow__image"
       .Tweetshow__user__main__name
         = link_to user_path(@tweet.user), class: "Tweetshow__user__main__Name" do
           = @tweet.user.username

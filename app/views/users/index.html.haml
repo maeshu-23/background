@@ -4,7 +4,7 @@
       .UserList
         .Userlist
           = link_to user_path(user) do
-            = attachment_image_tag user, :profile_image, fallback: "no-image.png", class: "Userimage"
+            = attachment_image_tag user, :profile_image, fallback: "no-image.png", size: "120x120", class: "Userimage"
           .Userlist__name
             = link_to user.username, user_path(user)
             %br

@@ -1,6 +1,6 @@
 .ShowMain
   .ShowMain__left
-    = attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "ShowMain__left__image"
+    = attachment_image_tag @user, :profile_image, fallback: "no-image.png", size: "130x130", class: "ShowMain__left__image"
     .ShowMain__left__content
       .ShowMain__left__content__name
         = @user.username
